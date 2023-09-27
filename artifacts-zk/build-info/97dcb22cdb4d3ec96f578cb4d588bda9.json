@@ -1,0 +1,299 @@
+{
+  "id": "97dcb22cdb4d3ec96f578cb4d588bda9",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.6.12",
+  "solcLongVersion": "0.6.12+commit.27d51765",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/tokens/interfaces/IDLP.sol": {
+        "content": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.6.12;\n\ninterface IDLP {\n    function mint(address _account, uint256 _amount) external;\n    function burn(address _account, uint256 _amount) external;\n}\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "mode": "z"
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/tokens/interfaces/IDLP.sol": {
+        "IDLP": {
+          "abi": [
+            {
+              "inputs": [
+                {
+                  "internalType": "address",
+                  "name": "_account",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "_amount",
+                  "type": "uint256"
+                }
+              ],
+              "name": "burn",
+              "outputs": [],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            },
+            {
+              "inputs": [
+                {
+                  "internalType": "address",
+                  "name": "_account",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "_amount",
+                  "type": "uint256"
+                }
+              ],
+              "name": "mint",
+              "outputs": [],
+              "stateMutability": "nonpayable",
+              "type": "function"
+            }
+          ],
+          "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"burn\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"mint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/tokens/interfaces/IDLP.sol\":\"IDLP\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/tokens/interfaces/IDLP.sol\":{\"keccak256\":\"0x594cf4f252d0f9c6a433f27d3651762d6a91a80b0d9ce2f5376fd4b7c5d7fce9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d4734eaa86c1ff0418362344cbaf2926717a0972bde152c2b73ee5aa73a710b\",\"dweb:/ipfs/QmYqNNBW7WGxNSDAvSNjZqnQyZoN6U1oaMjs61a8rVTm67\"]}},\"version\":1}",
+          "evm": {
+            "legacyAssembly": null,
+            "assembly": null,
+            "bytecode": null,
+            "methodIdentifiers": {
+              "burn(address,uint256)": "9dc29fac",
+              "mint(address,uint256)": "40c10f19"
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "contracts/tokens/interfaces/IDLP.sol": {
+        "id": 0,
+        "ast": {
+          "nodeType": "SourceUnit",
+          "name": null,
+          "src": "33:170:0",
+          "memberName": null,
+          "functionName": null,
+          "AST": null,
+          "nodes": [
+            {
+              "nodeType": "PragmaDirective",
+              "name": null,
+              "src": "33:23:0",
+              "memberName": null,
+              "functionName": null,
+              "AST": null,
+              "nodes": null,
+              "statements": null,
+              "arguments": null,
+              "declarations": null,
+              "members": null,
+              "components": null,
+              "clauses": null,
+              "options": null,
+              "body": null,
+              "trueBody": null,
+              "falseBody": null,
+              "expression": null,
+              "condition": null,
+              "initializationExpression": null,
+              "leftExpression": null,
+              "rightExpression": null,
+              "subExpression": null,
+              "trueExpression": null,
+              "falseExpression": null,
+              "loopExpression": null,
+              "baseExpression": null,
+              "indexExpression": null,
+              "startExpression": null,
+              "endExpression": null,
+              "value": null,
+              "initialValue": null,
+              "externalCall": null,
+              "eventCall": null,
+              "errorCall": null,
+              "leftHandSide": null,
+              "rightHandSide": null,
+              "length": null
+            },
+            {
+              "nodeType": "ContractDefinition",
+              "name": "IDLP",
+              "src": "58:144:0",
+              "memberName": null,
+              "functionName": null,
+              "AST": null,
+              "nodes": [
+                {
+                  "nodeType": "FunctionDefinition",
+                  "name": "mint",
+                  "src": "79:58:0",
+                  "memberName": null,
+                  "functionName": null,
+                  "AST": null,
+                  "nodes": null,
+                  "statements": null,
+                  "arguments": null,
+                  "declarations": null,
+                  "members": null,
+                  "components": null,
+                  "clauses": null,
+                  "options": null,
+                  "body": null,
+                  "trueBody": null,
+                  "falseBody": null,
+                  "expression": null,
+                  "condition": null,
+                  "initializationExpression": null,
+                  "leftExpression": null,
+                  "rightExpression": null,
+                  "subExpression": null,
+                  "trueExpression": null,
+                  "falseExpression": null,
+                  "loopExpression": null,
+                  "baseExpression": null,
+                  "indexExpression": null,
+                  "startExpression": null,
+                  "endExpression": null,
+                  "value": null,
+                  "initialValue": null,
+                  "externalCall": null,
+                  "eventCall": null,
+                  "errorCall": null,
+                  "leftHandSide": null,
+                  "rightHandSide": null,
+                  "length": null
+                },
+                {
+                  "nodeType": "FunctionDefinition",
+                  "name": "burn",
+                  "src": "142:58:0",
+                  "memberName": null,
+                  "functionName": null,
+                  "AST": null,
+                  "nodes": null,
+                  "statements": null,
+                  "arguments": null,
+                  "declarations": null,
+                  "members": null,
+                  "components": null,
+                  "clauses": null,
+                  "options": null,
+                  "body": null,
+                  "trueBody": null,
+                  "falseBody": null,
+                  "expression": null,
+                  "condition": null,
+                  "initializationExpression": null,
+                  "leftExpression": null,
+                  "rightExpression": null,
+                  "subExpression": null,
+                  "trueExpression": null,
+                  "falseExpression": null,
+                  "loopExpression": null,
+                  "baseExpression": null,
+                  "indexExpression": null,
+                  "startExpression": null,
+                  "endExpression": null,
+                  "value": null,
+                  "initialValue": null,
+                  "externalCall": null,
+                  "eventCall": null,
+                  "errorCall": null,
+                  "leftHandSide": null,
+                  "rightHandSide": null,
+                  "length": null
+                }
+              ],
+              "statements": null,
+              "arguments": null,
+              "declarations": null,
+              "members": null,
+              "components": null,
+              "clauses": null,
+              "options": null,
+              "body": null,
+              "trueBody": null,
+              "falseBody": null,
+              "expression": null,
+              "condition": null,
+              "initializationExpression": null,
+              "leftExpression": null,
+              "rightExpression": null,
+              "subExpression": null,
+              "trueExpression": null,
+              "falseExpression": null,
+              "loopExpression": null,
+              "baseExpression": null,
+              "indexExpression": null,
+              "startExpression": null,
+              "endExpression": null,
+              "value": null,
+              "initialValue": null,
+              "externalCall": null,
+              "eventCall": null,
+              "errorCall": null,
+              "leftHandSide": null,
+              "rightHandSide": null,
+              "length": null
+            }
+          ],
+          "statements": null,
+          "arguments": null,
+          "declarations": null,
+          "members": null,
+          "components": null,
+          "clauses": null,
+          "options": null,
+          "body": null,
+          "trueBody": null,
+          "falseBody": null,
+          "expression": null,
+          "condition": null,
+          "initializationExpression": null,
+          "leftExpression": null,
+          "rightExpression": null,
+          "subExpression": null,
+          "trueExpression": null,
+          "falseExpression": null,
+          "loopExpression": null,
+          "baseExpression": null,
+          "indexExpression": null,
+          "startExpression": null,
+          "endExpression": null,
+          "value": null,
+          "initialValue": null,
+          "externalCall": null,
+          "eventCall": null,
+          "errorCall": null,
+          "leftHandSide": null,
+          "rightHandSide": null,
+          "length": null
+        }
+      }
+    },
+    "errors": [],
+    "version": "0.6.12",
+    "long_version": "0.6.12+commit.27d51765.Darwin.appleclang",
+    "zk_version": "1.3.8"
+  }
+}

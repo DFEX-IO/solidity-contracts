@@ -1,0 +1,259 @@
+{
+  "id": "221ad1e65082a4b7ed54a089b7cf9268",
+  "_format": "hh-sol-build-info-1",
+  "solcVersion": "0.6.12",
+  "solcLongVersion": "0.6.12+commit.27d51765",
+  "input": {
+    "language": "Solidity",
+    "sources": {
+      "contracts/amm/UniFactory.sol": {
+        "content": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.6.12;\n\ncontract UniFactory {\n    mapping(address => mapping(address => mapping(uint24 => address))) public getPool;\n}\n"
+      }
+    },
+    "settings": {
+      "optimizer": {
+        "enabled": true,
+        "mode": "z"
+      },
+      "outputSelection": {
+        "*": {
+          "*": [
+            "abi",
+            "evm.methodIdentifiers",
+            "metadata"
+          ],
+          "": [
+            "ast"
+          ]
+        }
+      }
+    }
+  },
+  "output": {
+    "contracts": {
+      "contracts/amm/UniFactory.sol": {
+        "UniFactory": {
+          "abi": [
+            {
+              "inputs": [
+                {
+                  "internalType": "address",
+                  "name": "",
+                  "type": "address"
+                },
+                {
+                  "internalType": "address",
+                  "name": "",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint24",
+                  "name": "",
+                  "type": "uint24"
+                }
+              ],
+              "name": "getPool",
+              "outputs": [
+                {
+                  "internalType": "address",
+                  "name": "",
+                  "type": "address"
+                }
+              ],
+              "stateMutability": "view",
+              "type": "function"
+            }
+          ],
+          "metadata": {
+            "optimizer_settings": "MzB3",
+            "solc_metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"\",\"type\":\"uint24\"}],\"name\":\"getPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/amm/UniFactory.sol\":\"UniFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/amm/UniFactory.sol\":{\"keccak256\":\"0x57faf56b27dd015f62aef8c2bc5357e9fac93b345dcfe3b18b75c756ae8d49f2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e3fcebc759467c94b09841e5eb2eacf6e5ee0b3efe9ade45644f91bb1a97716f\",\"dweb:/ipfs/QmdQ8UXzdzJgRyosL5cKbvuCZeKK3A1UhifmJsTwmbPnHu\"]}},\"version\":1}",
+            "zk_version": "1.3.8"
+          },
+          "evm": {
+            "legacyAssembly": null,
+            "assembly": "\t.text\n\t.file\t\"UniFactory.sol:UniFactory\"\n\t.globl\t__entry\n__entry:\n.func_begin0:\n\tptr.add\tr1, r0, stack[@ptr_calldata]\n\tshr.s\t96, r1, r1\n\tand\t@CPI0_0[0], r1, stack[@calldatasize]\n\tand!\t1, r2, r1\n\tjump.ne\t@.BB0_1\n\tadd\tr0, r0, r1\n\tnear_call\tr0, @function_main, @DEFAULT_UNWIND\n.BB0_1:\n\tadd\t1, r0, r1\n\tnear_call\tr0, @function_main, @DEFAULT_UNWIND\n.func_end0:\n\n__keccak256:\n.func_begin1:\n\tadd\t@CPI1_0[0], r0, r1\n\tcontext.gas_left\tr2\n\tsub.s!\t@CPI1_0[0], r2, r3\n\tadd.lt\tr2, r0, r1\n\tshl.s\t192, r1, r1\n\tor\t@CPI1_1[0], r1, r1\n\tadd\t32784, r0, r2\n\tnear_call\tr0, @__staticcall, @DEFAULT_UNWIND\n\tand!\t1, r2, r2\n\tjump.eq\t@.BB1_2\n\tld\tr1, r1\n\tret\n.BB1_2:\n\tnear_call\tr0, @__exit_revert, @DEFAULT_UNWIND\n.func_end1:\n\n__exit_return:\n.func_begin2:\n\tadd\t@CPI2_0[0], r0, r4\n\tsub.s!\t@CPI2_0[0], r1, r5\n\tadd.ge\tr4, r0, r1\n\tshl.s\t64, r1, r1\n\tadd\tr1, r3, r1\n\tsub.s!\t@CPI2_0[0], r2, r3\n\tadd.ge\tr4, r0, r2\n\tshl.s\t96, r2, r2\n\tadd\tr1, r2, r1\n\tret.ok.to_label\tr1, @DEFAULT_FAR_RETURN\n.func_end2:\n\n__exit_revert:\n.func_begin3:\n\tadd\tr0, r0, r1\n\tret.revert.to_label\tr1, @DEFAULT_FAR_REVERT\n.func_end3:\n\nfunction_main:\n.func_begin4:\n\tnop\tstack+=[2]\n\tadd\t128, r0, r2\n\tst.1\t64, r2\n\tcontext.get_context_u128\tr2\n\tsub.s!\t0, r1, r1\n\tjump.eq\t@.BB4_3\n\tsub.s!\t0, r2, r1\n\tjump.ne\t@.BB4_5\n\tadd\t32, r0, r1\n\tst.2\t256, r1\n\tst.2\t288, r0\n\tadd\t256, r0, r1\n\tadd\t64, r0, r2\n\tadd\t@CPI4_4[0], r0, r3\n\tnear_call\tr0, @__exit_return, @DEFAULT_UNWIND\n.BB4_3:\n\tsub.s!\t0, r2, r1\n\tjump.ne\t@.BB4_5\n\tadd\tstack[@calldatasize], r0, r2\n\tsub.s!\t3, r2, r1\n\tjump.le\t@.BB4_5\n\tptr.add\tstack[@ptr_calldata], r0, r1\n\tld\tr1, r3\n\tand\t@CPI4_0[0], r3, r3\n\tsub.s!\t@CPI4_1[0], r3, r3\n\tjump.ne\t@.BB4_5\n\tsub.s\t100, r2, r2\n\tsub.s\t96, r0, r3\n\tsub!\tr2, r3, r2\n\tjump.ge\t@.BB4_5\n\tptr.add.s\t68, r1, r2\n\tld\tr2, r2\n\tadd\tr2, r0, stack-[2]\n\tptr.add.s\t36, r1, r2\n\tld\tr2, r2\n\tadd\tr2, r0, stack-[1]\n\tptr.add.s\t4, r1, r1\n\tld\tr1, r1\n\tst.1\t32, r0\n\tand\t@CPI4_2[0], r1, r1\n\tst.1\t0, r1\n\tnear_call\tr0, @__keccak256, @DEFAULT_UNWIND\n\tst.1\t32, r1\n\tadd\tstack-[1], r0, r1\n\tand\t@CPI4_2[0], r1, r1\n\tst.1\t0, r1\n\tnear_call\tr0, @__keccak256, @DEFAULT_UNWIND\n\tst.1\t32, r1\n\tadd\tstack-[2], r0, r1\n\tand\t@CPI4_3[0], r1, r1\n\tst.1\t0, r1\n\tnear_call\tr0, @__keccak256, @DEFAULT_UNWIND\n\tsload\tr1, r1\n\tand\t@CPI4_2[0], r1, r1\n\tld.1\t64, r2\n\tst.1\tr2, r1\n\tld.1\t64, r1\n\tsub\tr2, r1, r2\n\tadd\t32, r2, r2\n\tadd\tr0, r0, r3\n\tnear_call\tr0, @__exit_return, @DEFAULT_UNWIND\n.BB4_5:\n\tnear_call\tr0, @__exit_revert, @DEFAULT_UNWIND\n.func_end4:\n\n__staticcall:\n.func_begin5:\n.tmp0:\n\tfar_call.static\tr1, r2, @.BB5_2\n.tmp1:\n\tadd\t1, r0, r2\n\tret\n.BB5_2:\n.tmp2:\n\tadd\tr0, r0, r2\n\tret\n.func_end5:\n\n\t.data\n\t.p2align\t5\ncalldatasize:\n\t.cell 0\n\n\t.p2align\t5\nptr_calldata:\n.cell\t0\n\n\t.note.GNU-stack\n\t.rodata\nCPI0_0:\nCPI1_0:\nCPI2_0:\n\t.cell 4294967295\nCPI1_1:\n\t.cell 904625697166532776746648320380374280103671760270919307471179981048634146816\nCPI4_0:\n\t.cell -26959946667150639794667015087019630673637144422540572481103610249216\nCPI4_1:\n\t.cell 10221089543101777846074375522904223940155837796292731536049921492511109414912\nCPI4_2:\n\t.cell 1461501637330902918203684832716283019655932542975\nCPI4_3:\n\t.cell 16777215\nCPI4_4:\n\t.cell 53919893334301279589334030174039261347274288845081144962207220498432\n",
+            "bytecode": {
+              "object": "0002000000000002000100000001035500000060011002700000001b0010019d0000000101200190000000080000c13d0000000001000019006500230000040f0000000101000039006500230000040f0000001b0100004100000000020004140000001b0320009c0000000001024019000000c0011002100000001c011001c70000801002000039006500600000040f0000000102200190000000160000613d000000000101043b000000000001042d006500210000040f0000001b040000410000001b0510009c0000000001048019000000400110021000000000013100190000001b0320009c000000000204801900000060022002100000000001210019000000660001042e0000000001000019000000670001043000020000000000020000008002000039000000400020043f0000000002000416000000000110004c000000320000613d000000000120004c0000005f0000c13d000000200100003900000100001004430000012000000443000001000100003900000040020000390000002103000041006500170000040f000000000120004c0000005f0000c13d0000000002000031000000030120008c0000005f0000a13d0000000101000367000000000301043b0000001d033001970000001e0330009c0000005f0000c13d000000640220008a000000600300008a000000000232004b0000005f0000813d0000004402100370000000000202043b000200000002001d0000002402100370000000000202043b000100000002001d0000000401100370000000000101043b000000200000043f0000001f0110019700000000001004350065000a0000040f000000200010043f00000001010000290000001f0110019700000000001004350065000a0000040f000000200010043f0000000201000029000000200110019700000000001004350065000a0000040f000000000101041a0000001f01100197000000400200043d0000000000120435000000400100043d000000000212004900000020022000390000000003000019006500170000040f006500210000040f00000063002104230000000102000039000000000001042d0000000002000019000000000001042d0000006500000432000000660001042e0000006700010430000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff0200000000000000000000000000000000000040000000000000000000000000ffffffff000000000000000000000000000000000000000000000000000000001698ee8200000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffffffffffffffffff0000000000000000000000000000000000000000000000000000000000ffffff000000020000000000000000000000000000000000000000000000000000000041407b9f55ea33b5aeb21d4dfcb023ff35da8ff790a1a51b0f24a8690f4ac74c"
+            },
+            "methodIdentifiers": {
+              "getPool(address,address,uint24)": "1698ee82"
+            }
+          },
+          "hash": "01000023c6ed2539a4e0cf84dfca3d2f834bf9715b8c45c63e3ec41a4b602f53",
+          "factoryDependencies": {}
+        }
+      }
+    },
+    "sources": {
+      "contracts/amm/UniFactory.sol": {
+        "id": 0,
+        "ast": {
+          "nodeType": "SourceUnit",
+          "name": null,
+          "src": "33:136:0",
+          "memberName": null,
+          "functionName": null,
+          "AST": null,
+          "nodes": [
+            {
+              "nodeType": "PragmaDirective",
+              "name": null,
+              "src": "33:23:0",
+              "memberName": null,
+              "functionName": null,
+              "AST": null,
+              "nodes": null,
+              "statements": null,
+              "arguments": null,
+              "declarations": null,
+              "members": null,
+              "components": null,
+              "clauses": null,
+              "options": null,
+              "body": null,
+              "trueBody": null,
+              "falseBody": null,
+              "expression": null,
+              "condition": null,
+              "initializationExpression": null,
+              "leftExpression": null,
+              "rightExpression": null,
+              "subExpression": null,
+              "trueExpression": null,
+              "falseExpression": null,
+              "loopExpression": null,
+              "baseExpression": null,
+              "indexExpression": null,
+              "startExpression": null,
+              "endExpression": null,
+              "value": null,
+              "initialValue": null,
+              "externalCall": null,
+              "eventCall": null,
+              "errorCall": null,
+              "leftHandSide": null,
+              "rightHandSide": null,
+              "length": null
+            },
+            {
+              "nodeType": "ContractDefinition",
+              "name": "UniFactory",
+              "src": "58:110:0",
+              "memberName": null,
+              "functionName": null,
+              "AST": null,
+              "nodes": [
+                {
+                  "nodeType": "VariableDeclaration",
+                  "name": "getPool",
+                  "src": "84:81:0",
+                  "memberName": null,
+                  "functionName": null,
+                  "AST": null,
+                  "nodes": null,
+                  "statements": null,
+                  "arguments": null,
+                  "declarations": null,
+                  "members": null,
+                  "components": null,
+                  "clauses": null,
+                  "options": null,
+                  "body": null,
+                  "trueBody": null,
+                  "falseBody": null,
+                  "expression": null,
+                  "condition": null,
+                  "initializationExpression": null,
+                  "leftExpression": null,
+                  "rightExpression": null,
+                  "subExpression": null,
+                  "trueExpression": null,
+                  "falseExpression": null,
+                  "loopExpression": null,
+                  "baseExpression": null,
+                  "indexExpression": null,
+                  "startExpression": null,
+                  "endExpression": null,
+                  "value": null,
+                  "initialValue": null,
+                  "externalCall": null,
+                  "eventCall": null,
+                  "errorCall": null,
+                  "leftHandSide": null,
+                  "rightHandSide": null,
+                  "length": null
+                }
+              ],
+              "statements": null,
+              "arguments": null,
+              "declarations": null,
+              "members": null,
+              "components": null,
+              "clauses": null,
+              "options": null,
+              "body": null,
+              "trueBody": null,
+              "falseBody": null,
+              "expression": null,
+              "condition": null,
+              "initializationExpression": null,
+              "leftExpression": null,
+              "rightExpression": null,
+              "subExpression": null,
+              "trueExpression": null,
+              "falseExpression": null,
+              "loopExpression": null,
+              "baseExpression": null,
+              "indexExpression": null,
+              "startExpression": null,
+              "endExpression": null,
+              "value": null,
+              "initialValue": null,
+              "externalCall": null,
+              "eventCall": null,
+              "errorCall": null,
+              "leftHandSide": null,
+              "rightHandSide": null,
+              "length": null
+            }
+          ],
+          "statements": null,
+          "arguments": null,
+          "declarations": null,
+          "members": null,
+          "components": null,
+          "clauses": null,
+          "options": null,
+          "body": null,
+          "trueBody": null,
+          "falseBody": null,
+          "expression": null,
+          "condition": null,
+          "initializationExpression": null,
+          "leftExpression": null,
+          "rightExpression": null,
+          "subExpression": null,
+          "trueExpression": null,
+          "falseExpression": null,
+          "loopExpression": null,
+          "baseExpression": null,
+          "indexExpression": null,
+          "startExpression": null,
+          "endExpression": null,
+          "value": null,
+          "initialValue": null,
+          "externalCall": null,
+          "eventCall": null,
+          "errorCall": null,
+          "leftHandSide": null,
+          "rightHandSide": null,
+          "length": null
+        }
+      }
+    },
+    "errors": [],
+    "version": "0.6.12",
+    "long_version": "0.6.12+commit.27d51765.Darwin.appleclang",
+    "zk_version": "1.3.8"
+  }
+}

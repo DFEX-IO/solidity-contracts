@@ -1,0 +1,5882 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/access/Governable.sol": {
+      "lastModificationDate": 1667325039248,
+      "contentHash": "05dd8a71481cfeae4ec317005e74cda2",
+      "sourceName": "contracts/access/Governable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Governable"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/Bridge.sol": {
+      "lastModificationDate": 1681397338646,
+      "contentHash": "278c89f8507fd56d29cb932891225d2e",
+      "sourceName": "contracts/tokens/Bridge.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Bridge"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/token/IERC20.sol": {
+      "lastModificationDate": 1667294496337,
+      "contentHash": "108806e05552e6e6b8da283af9c455b2",
+      "sourceName": "contracts/libraries/token/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/math/SafeMath.sol": {
+      "lastModificationDate": 1667294496349,
+      "contentHash": "5a01b10c876b53fa1ef793328741b8af",
+      "sourceName": "contracts/libraries/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/token/SafeERC20.sol": {
+      "lastModificationDate": 1675424408174,
+      "contentHash": "3972576c8f1324bf28e1cb62397f9899",
+      "sourceName": "contracts/libraries/token/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../math/SafeMath.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1667294496344,
+      "contentHash": "d3b541f0c45b789b20107137c6ad526f",
+      "sourceName": "contracts/libraries/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/utils/Address.sol": {
+      "lastModificationDate": 1667294496345,
+      "contentHash": "b32ef078a758efa4d45eb9c0b3e102d5",
+      "sourceName": "contracts/libraries/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/YieldTracker.sol": {
+      "lastModificationDate": 1675403877077,
+      "contentHash": "3a95fcf37cf18e9f658e9571d6eb8eba",
+      "sourceName": "contracts/tokens/YieldTracker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IDistributor.sol",
+        "./interfaces/IYieldTracker.sol",
+        "./interfaces/IYieldToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldTracker"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/interfaces/IDistributor.sol": {
+      "lastModificationDate": 1667294496390,
+      "contentHash": "57ed93765a80528d0bd9c818bbcdfd07",
+      "sourceName": "contracts/tokens/interfaces/IDistributor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IDistributor"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/interfaces/IYieldTracker.sol": {
+      "lastModificationDate": 1667294496386,
+      "contentHash": "6d94dcdf3613e43b5b164b8bf841e18d",
+      "sourceName": "contracts/tokens/interfaces/IYieldTracker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IYieldTracker"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/interfaces/IYieldToken.sol": {
+      "lastModificationDate": 1667294496388,
+      "contentHash": "45bddf5e1d39e63fe161e7352616088c",
+      "sourceName": "contracts/tokens/interfaces/IYieldToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IYieldToken"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/YieldToken.sol": {
+      "lastModificationDate": 1675403753889,
+      "contentHash": "c8866f99f1f3889099a69fedf76c86b1",
+      "sourceName": "contracts/tokens/YieldToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "./interfaces/IYieldTracker.sol",
+        "./interfaces/IYieldToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldToken"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/YieldFarm.sol": {
+      "lastModificationDate": 1667294496381,
+      "contentHash": "6f7a28eaeab54a58c5a71754d1fc673a",
+      "sourceName": "contracts/tokens/YieldFarm.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./YieldToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "YieldFarm"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/TimeDistributor.sol": {
+      "lastModificationDate": 1667294496379,
+      "contentHash": "ac9ed56ac7874d8c1edf9e01532f8f38",
+      "sourceName": "contracts/tokens/TimeDistributor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "./interfaces/IDistributor.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TimeDistributor"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/WETH.sol": {
+      "lastModificationDate": 1667294496383,
+      "contentHash": "bba802f528b75a886c62d92df3cbd202",
+      "sourceName": "contracts/tokens/WETH.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "WETH"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/FaucetToken.sol": {
+      "lastModificationDate": 1667294496384,
+      "contentHash": "e8b7d1a18a7483e35bcbfd8d87381f1a",
+      "sourceName": "contracts/tokens/FaucetToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FaucetToken"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/Vester.sol": {
+      "lastModificationDate": 1676249907404,
+      "contentHash": "ebd94e60a059ef3e0038262e59c57ed0",
+      "sourceName": "contracts/staking/Vester.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRewardTracker.sol",
+        "./interfaces/IVester.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Vester"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/interfaces/IRewardTracker.sol": {
+      "lastModificationDate": 1667294496364,
+      "contentHash": "318fbbed6a4bb5e6d813bf785fb5e898",
+      "sourceName": "contracts/staking/interfaces/IRewardTracker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IRewardTracker"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/interfaces/IVester.sol": {
+      "lastModificationDate": 1667294496364,
+      "contentHash": "ab92731f7a5236e735280c47236388b3",
+      "sourceName": "contracts/staking/interfaces/IVester.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IVester"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/interfaces/IMintable.sol": {
+      "lastModificationDate": 1667294496389,
+      "contentHash": "4ff49bccf043be8d5d76ca6c8927658a",
+      "sourceName": "contracts/tokens/interfaces/IMintable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IMintable"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/RewardRouterV2.sol": {
+      "lastModificationDate": 1675687868666,
+      "contentHash": "355ead402140305a7a801f3169d209cc",
+      "sourceName": "contracts/staking/RewardRouterV2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../libraries/utils/Address.sol",
+        "./interfaces/IRewardTracker.sol",
+        "./interfaces/IVester.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../tokens/interfaces/IWETH.sol",
+        "../core/interfaces/IDlpManager.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "RewardRouterV2"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/interfaces/IWETH.sol": {
+      "lastModificationDate": 1667294496387,
+      "contentHash": "549a2b85c8a7cbc9af9274774af6e628",
+      "sourceName": "contracts/tokens/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/interfaces/IDlpManager.sol": {
+      "lastModificationDate": 1667313551280,
+      "contentHash": "edc75ec5bd3816526299a0d4d1c014f0",
+      "sourceName": "contracts/core/interfaces/IDlpManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IDlpManager"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/StakedDlp.sol": {
+      "lastModificationDate": 1676240853307,
+      "contentHash": "a2323e5fad6147ac6cb167ddcd237079",
+      "sourceName": "contracts/staking/StakedDlp.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../core/interfaces/IDlpManager.sol",
+        "./interfaces/IRewardTracker.sol",
+        "./interfaces/IRewardTracker.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "StakedDlp"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/StakeManager.sol": {
+      "lastModificationDate": 1675661569791,
+      "contentHash": "132cfd74866186ce31755302c639a49d",
+      "sourceName": "contracts/staking/StakeManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IRewardTracker.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "StakeManager"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/RewardTracker.sol": {
+      "lastModificationDate": 1675692880934,
+      "contentHash": "3f570a075da021c341596b9587eb75c2",
+      "sourceName": "contracts/staking/RewardTracker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRewardDistributor.sol",
+        "./interfaces/IRewardTracker.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "RewardTracker"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/interfaces/IRewardDistributor.sol": {
+      "lastModificationDate": 1667294496365,
+      "contentHash": "14be2787aa8fab1b34165070af5aeeba",
+      "sourceName": "contracts/staking/interfaces/IRewardDistributor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IRewardDistributor"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/RewardDistributor.sol": {
+      "lastModificationDate": 1675661577317,
+      "contentHash": "0b512760ebf72eebac5e946d5b6a5c7e",
+      "sourceName": "contracts/staking/RewardDistributor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRewardDistributor.sol",
+        "./interfaces/IRewardTracker.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "RewardDistributor"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/BonusDistributor.sol": {
+      "lastModificationDate": 1675428759786,
+      "contentHash": "6e797bcd0179a0866eef132f621f9f46",
+      "sourceName": "contracts/staking/BonusDistributor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRewardDistributor.sol",
+        "./interfaces/IRewardTracker.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BonusDistributor"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/RewardRouter.sol": {
+      "lastModificationDate": 1675426544323,
+      "contentHash": "8136b0e3ecb0da42162a6f33fcaa1264",
+      "sourceName": "contracts/staking/RewardRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../libraries/utils/Address.sol",
+        "./interfaces/IRewardTracker.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../tokens/interfaces/IWETH.sol",
+        "../core/interfaces/IDlpManager.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "RewardRouter"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/Router.sol": {
+      "lastModificationDate": 1675650356141,
+      "contentHash": "203ca01d1b0b07a13f2fdee8028d9b3c",
+      "sourceName": "contracts/core/Router.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/Address.sol",
+        "../tokens/interfaces/IWETH.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IRouter.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Router"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/interfaces/IVault.sol": {
+      "lastModificationDate": 1670194428173,
+      "contentHash": "07ccbbfd2e077abe215a7e990a17225a",
+      "sourceName": "contracts/core/interfaces/IVault.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./IVaultUtils.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IVault"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/interfaces/IRouter.sol": {
+      "lastModificationDate": 1667294496324,
+      "contentHash": "0d3d0c76ede94b3beb23476a032b923e",
+      "sourceName": "contracts/core/interfaces/IRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IRouter"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/interfaces/IVaultUtils.sol": {
+      "lastModificationDate": 1667313576644,
+      "contentHash": "a750a6f5534490063375d0ec3934d90d",
+      "sourceName": "contracts/core/interfaces/IVaultUtils.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IVaultUtils"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/Timelock.sol": {
+      "lastModificationDate": 1676207544741,
+      "contentHash": "e9ee9372e6e2c9fe53d9fc36746a6518",
+      "sourceName": "contracts/peripherals/Timelock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/ITimelockTarget.sol",
+        "./interfaces/ITimelock.sol",
+        "./interfaces/IHandlerTarget.sol",
+        "../access/interfaces/IAdmin.sol",
+        "../core/interfaces/IVault.sol",
+        "../core/interfaces/IVaultUtils.sol",
+        "../core/interfaces/IVaultPriceFeed.sol",
+        "../oracle/interfaces/IFastPriceFeed.sol",
+        "../core/interfaces/IRouter.sol",
+        "../referrals/interfaces/IReferralStorage.sol",
+        "../tokens/interfaces/IYieldToken.sol",
+        "../tokens/interfaces/IBaseToken.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../tokens/interfaces/IUSDD.sol",
+        "../staking/interfaces/IVester.sol",
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Timelock"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/interfaces/ITimelockTarget.sol": {
+      "lastModificationDate": 1667294496374,
+      "contentHash": "c50ac74accd4fb118aa2a833b4d24fd4",
+      "sourceName": "contracts/peripherals/interfaces/ITimelockTarget.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ITimelockTarget"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/interfaces/ITimelock.sol": {
+      "lastModificationDate": 1667294496375,
+      "contentHash": "dc05e566b3cbecfc72540863e3e07f5c",
+      "sourceName": "contracts/peripherals/interfaces/ITimelock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ITimelock"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/interfaces/IHandlerTarget.sol": {
+      "lastModificationDate": 1667294496372,
+      "contentHash": "240660fb858f54b525bd06ec9dfc39f1",
+      "sourceName": "contracts/peripherals/interfaces/IHandlerTarget.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IHandlerTarget"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/access/interfaces/IAdmin.sol": {
+      "lastModificationDate": 1667294496328,
+      "contentHash": "b4adba1e45596a3e04d0b599df5be38a",
+      "sourceName": "contracts/access/interfaces/IAdmin.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IAdmin"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/interfaces/IVaultPriceFeed.sol": {
+      "lastModificationDate": 1667294496324,
+      "contentHash": "6be1313374d1779de5a5637e97ad8668",
+      "sourceName": "contracts/core/interfaces/IVaultPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IVaultPriceFeed"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/oracle/interfaces/IFastPriceFeed.sol": {
+      "lastModificationDate": 1667294496333,
+      "contentHash": "211350e9f0d0bd914e1e69545ac62645",
+      "sourceName": "contracts/oracle/interfaces/IFastPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IFastPriceFeed"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/referrals/interfaces/IReferralStorage.sol": {
+      "lastModificationDate": 1667294496330,
+      "contentHash": "925cb7dd615e08d513741e71462657e9",
+      "sourceName": "contracts/referrals/interfaces/IReferralStorage.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IReferralStorage"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/interfaces/IBaseToken.sol": {
+      "lastModificationDate": 1667294496390,
+      "contentHash": "c274786fe254cdc2e85727193b132241",
+      "sourceName": "contracts/tokens/interfaces/IBaseToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IBaseToken"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/interfaces/IUSDD.sol": {
+      "lastModificationDate": 1675388427899,
+      "contentHash": "be1392182f476434b9fcc371a912a691",
+      "sourceName": "contracts/tokens/interfaces/IUSDD.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IUSDD"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/RewardReader.sol": {
+      "lastModificationDate": 1675639819932,
+      "contentHash": "cfdbb2ad5e0aca87a9c97a6f56d3e64d",
+      "sourceName": "contracts/peripherals/RewardReader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../staking/interfaces/IVester.sol",
+        "../staking/interfaces/IRewardTracker.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "RewardReader"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/Reader.sol": {
+      "lastModificationDate": 1675691554461,
+      "contentHash": "f96bb16103c01b3fe586a0f693005488",
+      "sourceName": "contracts/peripherals/Reader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../core/interfaces/IVault.sol",
+        "../core/interfaces/IVaultPriceFeed.sol",
+        "../tokens/interfaces/IYieldTracker.sol",
+        "../tokens/interfaces/IYieldToken.sol",
+        "../amm/interfaces/IPancakeFactory.sol",
+        "../staking/interfaces/IVester.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Reader"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/amm/interfaces/IPancakeFactory.sol": {
+      "lastModificationDate": 1667294496355,
+      "contentHash": "d0e78d6a0a744bd1372ce4c3011f81d9",
+      "sourceName": "contracts/amm/interfaces/IPancakeFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IPancakeFactory"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/amm/PancakeFactory.sol": {
+      "lastModificationDate": 1667294496352,
+      "contentHash": "0355be8814ee596ba6a9d43853ba7783",
+      "sourceName": "contracts/amm/PancakeFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IPancakeFactory.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PancakeFactory"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/BaseToken.sol": {
+      "lastModificationDate": 1675671465558,
+      "contentHash": "897e7143b505b9ef05626b12fce1176f",
+      "sourceName": "contracts/tokens/BaseToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "./interfaces/IYieldTracker.sol",
+        "./interfaces/IBaseToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BaseToken"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/DfexTimelock.sol": {
+      "lastModificationDate": 1667313576646,
+      "contentHash": "ac18d446b3b5ef7ad261e8465c6c1310",
+      "sourceName": "contracts/peripherals/DfexTimelock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/ITimelockTarget.sol",
+        "./interfaces/IDfexTimelock.sol",
+        "./interfaces/IHandlerTarget.sol",
+        "../access/interfaces/IAdmin.sol",
+        "../core/interfaces/IVault.sol",
+        "../core/interfaces/IVaultUtils.sol",
+        "../core/interfaces/IVaultPriceFeed.sol",
+        "../core/interfaces/IRouter.sol",
+        "../tokens/interfaces/IYieldToken.sol",
+        "../tokens/interfaces/IBaseToken.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../tokens/interfaces/IUSDD.sol",
+        "../staking/interfaces/IVester.sol",
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DfexTimelock"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/interfaces/IDfexTimelock.sol": {
+      "lastModificationDate": 1667313310838,
+      "contentHash": "131ff987a8a8acf88ebfbce90a59e4ac",
+      "sourceName": "contracts/peripherals/interfaces/IDfexTimelock.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IDfexTimelock"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/USDD.sol": {
+      "lastModificationDate": 1675403744691,
+      "contentHash": "1c20ec5dff65475dd1779e322ef41471",
+      "sourceName": "contracts/tokens/USDD.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IUSDD.sol",
+        "./YieldToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "USDD"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/Vault.sol": {
+      "lastModificationDate": 1682349285109,
+      "contentHash": "4f7bf26bbc3fe3a26dd76e88c4357099",
+      "sourceName": "contracts/core/Vault.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../tokens/interfaces/IUSDD.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IVaultUtils.sol",
+        "./interfaces/IVaultPriceFeed.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Vault"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/VaultReader.sol": {
+      "lastModificationDate": 1675400873659,
+      "contentHash": "d02e89dbfc186beecf644acf120c4bd0",
+      "sourceName": "contracts/peripherals/VaultReader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../core/interfaces/IVault.sol",
+        "../core/interfaces/IVaultPriceFeed.sol",
+        "../core/interfaces/IBasePositionManager.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "VaultReader"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/interfaces/IBasePositionManager.sol": {
+      "lastModificationDate": 1667294496321,
+      "contentHash": "dcf60252d3d1e6ef2975a786a0d1fca2",
+      "sourceName": "contracts/core/interfaces/IBasePositionManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IBasePositionManager"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/BasePositionManager.sol": {
+      "lastModificationDate": 1675404395682,
+      "contentHash": "308477345fbbc41dd4c441209d21ab0b",
+      "sourceName": "contracts/core/BasePositionManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../tokens/interfaces/IWETH.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/Address.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRouter.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IOrderBook.sol",
+        "./interfaces/IBasePositionManager.sol",
+        "../access/Governable.sol",
+        "../peripherals/interfaces/ITimelock.sol",
+        "../referrals/interfaces/IReferralStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "BasePositionManager"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/interfaces/IOrderBook.sol": {
+      "lastModificationDate": 1667294496323,
+      "contentHash": "b42daf5044eea9b76e3bcd1f3dc02f36",
+      "sourceName": "contracts/core/interfaces/IOrderBook.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IOrderBook"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/PositionRouter.sol": {
+      "lastModificationDate": 1676207831322,
+      "contentHash": "3b856c3491e46835fb13c294da301cbd",
+      "sourceName": "contracts/core/PositionRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IRouter.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IPositionRouter.sol",
+        "../peripherals/interfaces/ITimelock.sol",
+        "./BasePositionManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "PositionRouter"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/interfaces/IPositionRouter.sol": {
+      "lastModificationDate": 1675393403744,
+      "contentHash": "ecb01da3eb2fcffadc26982702b6f281",
+      "sourceName": "contracts/core/interfaces/IPositionRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IPositionRouter"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/RewardManager.sol": {
+      "lastModificationDate": 1676241119720,
+      "contentHash": "0f475fc9a209749569bfc995a42e5239",
+      "sourceName": "contracts/staking/RewardManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../access/Governable.sol",
+        "../peripherals/interfaces/ITimelock.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "RewardManager"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/referrals/ReferralStorage.sol": {
+      "lastModificationDate": 1667294496329,
+      "contentHash": "ce34822eb60b5573d0ba50e82403727a",
+      "sourceName": "contracts/referrals/ReferralStorage.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../access/Governable.sol",
+        "../peripherals/interfaces/ITimelock.sol",
+        "./interfaces/IReferralStorage.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ReferralStorage"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/referrals/ReferralReader.sol": {
+      "lastModificationDate": 1667294496329,
+      "contentHash": "e53b60210febf5ebd2d04b1dcd42cd0d",
+      "sourceName": "contracts/referrals/ReferralReader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IReferralStorage.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ReferralReader"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/PositionManager.sol": {
+      "lastModificationDate": 1676207860438,
+      "contentHash": "cf84de67839e2de844e999ae8481b47c",
+      "sourceName": "contracts/core/PositionManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IRouter.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IOrderBook.sol",
+        "../peripherals/interfaces/ITimelock.sol",
+        "./BasePositionManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "PositionManager"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/OrderBookReader.sol": {
+      "lastModificationDate": 1676209851777,
+      "contentHash": "98ff1be4b6bae93577ee7d3e39334d89",
+      "sourceName": "contracts/peripherals/OrderBookReader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../core/interfaces/IOrderBook.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "OrderBookReader"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/OrderExecutor.sol": {
+      "lastModificationDate": 1676209949174,
+      "contentHash": "7ce026351aaa94b8966a466b545bfda8",
+      "sourceName": "contracts/core/OrderExecutor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IOrderBook.sol",
+        "../peripherals/interfaces/ITimelock.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "OrderExecutor"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/BalanceUpdater.sol": {
+      "lastModificationDate": 1667313576597,
+      "contentHash": "f1d82433a24e96c7c8303a30441cb2c3",
+      "sourceName": "contracts/peripherals/BalanceUpdater.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../core/interfaces/IVault.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BalanceUpdater"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/dfex/MigrationHandler.sol": {
+      "lastModificationDate": 1667313576644,
+      "contentHash": "d5745bcbc63ca488c42798108062dd28",
+      "sourceName": "contracts/dfex/MigrationHandler.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IAmmRouter.sol",
+        "./interfaces/IDfexMigrator.sol",
+        "../core/interfaces/IVault.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MigrationHandler"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/dfex/interfaces/IAmmRouter.sol": {
+      "lastModificationDate": 1667294496310,
+      "contentHash": "c8160655c0c984513c505db6b01c36f7",
+      "sourceName": "contracts/dfex/interfaces/IAmmRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IAmmRouter"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/dfex/interfaces/IDfexMigrator.sol": {
+      "lastModificationDate": 1667313206002,
+      "contentHash": "fcebe052ed99d191713f4641cbf3c2d2",
+      "sourceName": "contracts/dfex/interfaces/IDfexMigrator.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IDfexMigrator"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/dfex/DfexMigrator.sol": {
+      "lastModificationDate": 1667313222488,
+      "contentHash": "4f7e4e114accc3c080533cbab35df932",
+      "sourceName": "contracts/dfex/DfexMigrator.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IDfexIou.sol",
+        "./interfaces/IAmmRouter.sol",
+        "./interfaces/IDfexMigrator.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DfexMigrator"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/dfex/interfaces/IDfexIou.sol": {
+      "lastModificationDate": 1667313206017,
+      "contentHash": "5fad9db4279af8b178d64b005baa8885",
+      "sourceName": "contracts/dfex/interfaces/IDfexIou.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IDfexIou"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/dfex/DfexIou.sol": {
+      "lastModificationDate": 1667313205958,
+      "contentHash": "19b388c44223b734eaf30e25047a6d6f",
+      "sourceName": "contracts/dfex/DfexIou.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "./interfaces/IDfexIou.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DfexIou"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/VaultUtils.sol": {
+      "lastModificationDate": 1675390415343,
+      "contentHash": "13edd512b90abc7be280ececa5ca13a2",
+      "sourceName": "contracts/core/VaultUtils.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IVaultUtils.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "VaultUtils"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/VaultErrorController.sol": {
+      "lastModificationDate": 1667294496315,
+      "contentHash": "b4e5099a43d6cccdd3dc5b471e177025",
+      "sourceName": "contracts/core/VaultErrorController.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IVault.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "VaultErrorController"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/OrderBook.sol": {
+      "lastModificationDate": 1676209949630,
+      "contentHash": "7ec9af1514e6e9e61477f158c06ae0f3",
+      "sourceName": "contracts/core/OrderBook.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../tokens/interfaces/IWETH.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/Address.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IRouter.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IOrderBook.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "OrderBook"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1667294496340,
+      "contentHash": "1562b757da01482efe203333386c2958",
+      "sourceName": "contracts/libraries/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./IERC721.sol",
+        "./IERC721Metadata.sol",
+        "./IERC721Enumerable.sol",
+        "./IERC721Receiver.sol",
+        "../../introspection/ERC165.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol",
+        "../../utils/EnumerableSet.sol",
+        "../../utils/EnumerableMap.sol",
+        "../../utils/Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/GSN/Context.sol": {
+      "lastModificationDate": 1667294496343,
+      "contentHash": "d606d7157f27eef50dd4c297d3733e6d",
+      "sourceName": "contracts/libraries/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1667294496341,
+      "contentHash": "471702709d00ad3e1827825c4f7ea434",
+      "sourceName": "contracts/libraries/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/token/ERC721/IERC721Metadata.sol": {
+      "lastModificationDate": 1667294496339,
+      "contentHash": "c747635b7aafc7aaef8ff5783ed25e6b",
+      "sourceName": "contracts/libraries/token/ERC721/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/token/ERC721/IERC721Enumerable.sol": {
+      "lastModificationDate": 1667294496338,
+      "contentHash": "e282e7d4aa6b40bfc9ee622b0f006ed5",
+      "sourceName": "contracts/libraries/token/ERC721/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1667294496340,
+      "contentHash": "09100c54c54a5b8ad854b2069b36fb43",
+      "sourceName": "contracts/libraries/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/introspection/ERC165.sol": {
+      "lastModificationDate": 1667294496348,
+      "contentHash": "cd8a4a4c1e298943d96dd5ed09ad27f3",
+      "sourceName": "contracts/libraries/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/utils/EnumerableSet.sol": {
+      "lastModificationDate": 1667294496346,
+      "contentHash": "335c4591d8f63429138e843e91156f03",
+      "sourceName": "contracts/libraries/utils/EnumerableSet.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "EnumerableSet"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/utils/EnumerableMap.sol": {
+      "lastModificationDate": 1667294496345,
+      "contentHash": "587bbaf85d8405a72ea86e19e796d18d",
+      "sourceName": "contracts/libraries/utils/EnumerableMap.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "EnumerableMap"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/utils/Strings.sol": {
+      "lastModificationDate": 1667294496347,
+      "contentHash": "35959f8ce36e9188c1d9b4348e125e48",
+      "sourceName": "contracts/libraries/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/introspection/IERC165.sol": {
+      "lastModificationDate": 1667294496348,
+      "contentHash": "39dfa4b6cbda90995ba59378dd6d9969",
+      "sourceName": "contracts/libraries/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/access/TokenManager.sol": {
+      "lastModificationDate": 1667294496326,
+      "contentHash": "f7aeccc06ac72a4d9bc65e6cd8fc71d7",
+      "sourceName": "contracts/access/TokenManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/ERC721/IERC721.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../peripherals/interfaces/ITimelock.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TokenManager"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/dfex/DfexFloor.sol": {
+      "lastModificationDate": 1667313222459,
+      "contentHash": "ed5f19c535215ecf04ba84ed381f6d4b",
+      "sourceName": "contracts/dfex/DfexFloor.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../access/TokenManager.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DfexFloor"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/token/ERC20.sol": {
+      "lastModificationDate": 1667294496337,
+      "contentHash": "715f3d6c4dba06fef37de28d004011f4",
+      "sourceName": "contracts/libraries/token/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../GSN/Context.sol",
+        "./IERC20.sol",
+        "../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/access/Ownable.sol": {
+      "lastModificationDate": 1667294496342,
+      "contentHash": "c25534a81df6d27d94818467f32f0a7d",
+      "sourceName": "contracts/libraries/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../GSN/Context.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/DlpManager.sol": {
+      "lastModificationDate": 1675660674030,
+      "contentHash": "26ed8b7d37728595aea891e8e7f5916b",
+      "sourceName": "contracts/core/DlpManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/token/SafeERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "./interfaces/IVault.sol",
+        "./interfaces/IDlpManager.sol",
+        "../tokens/interfaces/IUSDD.sol",
+        "../tokens/interfaces/IMintable.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DlpManager"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/oracle/FastPriceFeed.sol": {
+      "lastModificationDate": 1675393411019,
+      "contentHash": "d7f228d3d4bda957e5206e0a5d45a11b",
+      "sourceName": "contracts/oracle/FastPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "./interfaces/ISecondaryPriceFeed.sol",
+        "./interfaces/IFastPriceFeed.sol",
+        "./interfaces/IFastPriceEvents.sol",
+        "../core/interfaces/IPositionRouter.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FastPriceFeed"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/oracle/interfaces/ISecondaryPriceFeed.sol": {
+      "lastModificationDate": 1667294496335,
+      "contentHash": "b82393f6d5245352d40d363c07828338",
+      "sourceName": "contracts/oracle/interfaces/ISecondaryPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ISecondaryPriceFeed"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/oracle/interfaces/IFastPriceEvents.sol": {
+      "lastModificationDate": 1667294496335,
+      "contentHash": "8d96ee4bdc8083c7b9febb12b3628a9c",
+      "sourceName": "contracts/oracle/interfaces/IFastPriceEvents.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IFastPriceEvents"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/oracle/FastPriceEvents.sol": {
+      "lastModificationDate": 1667294496332,
+      "contentHash": "3911acae55f3792981d90987c6f6b9fd",
+      "sourceName": "contracts/oracle/FastPriceEvents.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "./interfaces/IFastPriceEvents.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FastPriceEvents"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/core/VaultPriceFeed.sol": {
+      "lastModificationDate": 1670202493382,
+      "contentHash": "eed33eacda6d2a6dca75347840221c55",
+      "sourceName": "contracts/core/VaultPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "./interfaces/IVaultPriceFeed.sol",
+        "../oracle/interfaces/IPriceFeed.sol",
+        "../oracle/interfaces/ISecondaryPriceFeed.sol",
+        "../oracle/interfaces/IChainlinkFlags.sol",
+        "../amm/interfaces/IPancakePair.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "VaultPriceFeed"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/oracle/interfaces/IPriceFeed.sol": {
+      "lastModificationDate": 1667294496334,
+      "contentHash": "e0f5deea4da6742a03e9b3be2cebe27c",
+      "sourceName": "contracts/oracle/interfaces/IPriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IPriceFeed"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/oracle/interfaces/IChainlinkFlags.sol": {
+      "lastModificationDate": 1667294496334,
+      "contentHash": "439e59c14a810e7ebcc457850e212c2d",
+      "sourceName": "contracts/oracle/interfaces/IChainlinkFlags.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IChainlinkFlags"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/amm/interfaces/IPancakePair.sol": {
+      "lastModificationDate": 1667294496356,
+      "contentHash": "68cf4942e69e9e5ddf3f6f86f2d57e8f",
+      "sourceName": "contracts/amm/interfaces/IPancakePair.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPancakePair"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/amm/PancakePair.sol": {
+      "lastModificationDate": 1667294496354,
+      "contentHash": "d73a523b3331998b7b36ca1f3958c1fc",
+      "sourceName": "contracts/amm/PancakePair.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IPancakePair.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PancakePair"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/oracle/PriceFeed.sol": {
+      "lastModificationDate": 1675269851439,
+      "contentHash": "25755e5c96581a797e8147ed2e84a38a",
+      "sourceName": "contracts/oracle/PriceFeed.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IPriceFeed.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PriceFeed"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/delete-gambit-token/Treasury.sol": {
+      "lastModificationDate": 1667294496376,
+      "contentHash": "efac7300dbdc0d8410213e519679640b",
+      "sourceName": "contracts/delete-gambit-token/Treasury.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../libraries/utils/ReentrancyGuard.sol",
+        "../amm/interfaces/IPancakeRouter.sol",
+        "./interfaces/IGMT.sol",
+        "../peripherals/interfaces/ITimelockTarget.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Treasury"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/amm/interfaces/IPancakeRouter.sol": {
+      "lastModificationDate": 1667294496357,
+      "contentHash": "cea35d613443189048f49ae6453d9e32",
+      "sourceName": "contracts/amm/interfaces/IPancakeRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IPancakeRouter"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/delete-gambit-token/interfaces/IGMT.sol": {
+      "lastModificationDate": 1667294496377,
+      "contentHash": "10f2f01b8a7349c1026722341ba37c6c",
+      "sourceName": "contracts/delete-gambit-token/interfaces/IGMT.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IGMT"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/delete-gambit-token/GMT.sol": {
+      "lastModificationDate": 1667294496375,
+      "contentHash": "80a44520e981f5735d2feeb2f89dff56",
+      "sourceName": "contracts/delete-gambit-token/GMT.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "./interfaces/IGMT.sol",
+        "../peripherals/interfaces/ITimelockTarget.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "GMT"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/amm/PancakeRouter.sol": {
+      "lastModificationDate": 1667294496353,
+      "contentHash": "aa6b505b2c0de49b3c4a2bd6fc71625c",
+      "sourceName": "contracts/amm/PancakeRouter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../tokens/Token.sol",
+        "../libraries/token/IERC20.sol",
+        "./interfaces/IPancakeRouter.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "PancakeRouter"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/Token.sol": {
+      "lastModificationDate": 1667294496378,
+      "contentHash": "56b3430fb721e5f180b6f90c372b9b6e",
+      "sourceName": "contracts/tokens/Token.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Token"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/MintableBaseToken.sol": {
+      "lastModificationDate": 1675657426803,
+      "contentHash": "f33f5c0eb36d405aff1393fa79a194ee",
+      "sourceName": "contracts/tokens/MintableBaseToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./BaseToken.sol",
+        "./interfaces/IMintable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MintableBaseToken"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/SnapshotToken.sol": {
+      "lastModificationDate": 1667294496384,
+      "contentHash": "d4f7b4c4dae05b7363c3260ed4cb61b6",
+      "sourceName": "contracts/tokens/SnapshotToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "./MintableBaseToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SnapshotToken"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/dfex/EsDFEX.sol": {
+      "lastModificationDate": 1675686014860,
+      "contentHash": "bcfc938a6fbbb8e878e9df29e0172b64",
+      "sourceName": "contracts/dfex/EsDFEX.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../tokens/MintableBaseToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "EsDFEX"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/dfex/DLP.sol": {
+      "lastModificationDate": 1675657437523,
+      "contentHash": "44c1d979c05f2cd443917593090d4d29",
+      "sourceName": "contracts/dfex/DLP.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../tokens/MintableBaseToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DLP"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/dfex/DFEX.sol": {
+      "lastModificationDate": 1675691555873,
+      "contentHash": "b7e0dd8830a3bda3111dbe4264e16d5c",
+      "sourceName": "contracts/dfex/DFEX.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../tokens/MintableBaseToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DFEX"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/EsDfexBatchSender.sol": {
+      "lastModificationDate": 1667313296561,
+      "contentHash": "eb0516dd613725ad53cb81e7d62b4a1d",
+      "sourceName": "contracts/peripherals/EsDfexBatchSender.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../staking/interfaces/IVester.sol",
+        "../staking/interfaces/IRewardTracker.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "EsDfexBatchSender"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/staking/DlpBalance.sol": {
+      "lastModificationDate": 1667312882787,
+      "contentHash": "73f32177fc65c40ecd1397b7d43a8980",
+      "sourceName": "contracts/staking/DlpBalance.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/math/SafeMath.sol",
+        "../libraries/token/IERC20.sol",
+        "../core/interfaces/IDlpManager.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DlpBalance"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/peripherals/BatchSender.sol": {
+      "lastModificationDate": 1667294496367,
+      "contentHash": "c3aeb3107d8036ec2da6db575c850339",
+      "sourceName": "contracts/peripherals/BatchSender.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [
+        "../libraries/token/IERC20.sol",
+        "../libraries/math/SafeMath.sol",
+        "../access/Governable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "BatchSender"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/amm/UniFactory.sol": {
+      "lastModificationDate": 1667294496354,
+      "contentHash": "f0456c29d6b85057723bf06aee62a306",
+      "sourceName": "contracts/amm/UniFactory.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UniFactory"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/amm/UniNftManager.sol": {
+      "lastModificationDate": 1667294496352,
+      "contentHash": "487f93137a889c7a61913d47aae0c919",
+      "sourceName": "contracts/amm/UniNftManager.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UniNftManager"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/amm/UniPool.sol": {
+      "lastModificationDate": 1667294496353,
+      "contentHash": "d39aa5cffb517b0dc19fec5c505bcbe8",
+      "sourceName": "contracts/amm/UniPool.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UniPool"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/math/Math.sol": {
+      "lastModificationDate": 1667294496351,
+      "contentHash": "a8dc87e10535bd4088c205995c1920af",
+      "sourceName": "contracts/libraries/math/Math.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/libraries/math/UQ112x112.sol": {
+      "lastModificationDate": 1667294496350,
+      "contentHash": "b0947f7742dee277ed3b140ac7608f79",
+      "sourceName": "contracts/libraries/math/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/interfaces/IBridge.sol": {
+      "lastModificationDate": 1667294496386,
+      "contentHash": "07849a9c9867dbed17dcce5aa28d8da9",
+      "sourceName": "contracts/tokens/interfaces/IBridge.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IBridge"
+      ]
+    },
+    "/Users/lyman/Downloads/dfex/gmx-contracts-before-price-feed-update/contracts/tokens/interfaces/IDLP.sol": {
+      "lastModificationDate": 1667312632355,
+      "contentHash": "403d89241e52d0081cb81c9cf865f0b9",
+      "sourceName": "contracts/tokens/interfaces/IDLP.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "mode": "z"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "zksolc": {
+          "version": "1.3.8",
+          "compilerSource": "binary",
+          "settings": {
+            "optimizer": {
+              "enabled": true,
+              "mode": "z"
+            },
+            "compilerPath": "",
+            "experimental": {}
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IDLP"
+      ]
+    }
+  }
+}

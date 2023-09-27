@@ -1,0 +1,61 @@
+{
+  "_format": "hh-zksolc-artifact-1",
+  "contractName": "IDfexTimelock",
+  "sourceName": "contracts/peripherals/interfaces/IDfexTimelock.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_admin",
+          "type": "address"
+        }
+      ],
+      "name": "setAdmin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_vault",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "_isLeverageEnabled",
+          "type": "bool"
+        }
+      ],
+      "name": "setIsLeverageEnabled",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_target",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_gov",
+          "type": "address"
+        }
+      ],
+      "name": "signalSetGov",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "factoryDeps": {}
+}
